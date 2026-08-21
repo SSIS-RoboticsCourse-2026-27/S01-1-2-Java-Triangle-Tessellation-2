@@ -33,7 +33,14 @@ public class Tessellation {
         // code for YELLOW triangles
 
         // code for GREEN triangles
-
+        SimpleGraphics.setFillColor(colors[1]); // set fill color to red
+        for (int i = 0; i < 5; i++) { // fillTriangle(x1, y1, x2, y2, x3, y3)
+            SimpleGraphics.fillTriangle(
+                1 * TRIANGLE_WIDTH, i * TRIANGLE_HEIGHT,
+                1 * TRIANGLE_WIDTH, (i+1) * TRIANGLE_HEIGHT,
+                2 * TRIANGLE_WIDTH, (i + 1) * TRIANGLE_HEIGHT
+            );
+        }
         // code for MAGENTA triangles
 
         // code for CYAN triangles
