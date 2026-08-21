@@ -20,12 +20,12 @@ public class Tessellation {
         // ==================================================================
 
         // code for RED triangles
-        SimpleGraphics.setFillColor(colors[0]); // set fill color to red
+        SimpleGraphics.setFillColor(colors[4]); // set fill color to red
         for (int i = 0; i < 5; i++) { // fillTriangle(x1, y1, x2, y2, x3, y3)
             SimpleGraphics.fillTriangle(
-                2 * TRIANGLE_WIDTH, i * TRIANGLE_HEIGHT,
-                3 * TRIANGLE_WIDTH, i * TRIANGLE_HEIGHT,
-                3 * TRIANGLE_WIDTH, (i + 1) * TRIANGLE_HEIGHT
+                0 * TRIANGLE_WIDTH, i * TRIANGLE_HEIGHT,
+                1 * TRIANGLE_WIDTH, i * TRIANGLE_HEIGHT,
+                1 * TRIANGLE_WIDTH, (i + 1) * TRIANGLE_HEIGHT
             );
         }
 
@@ -45,3 +45,5 @@ public class Tessellation {
         SimpleGraphics.start(Tessellation::drawPicture, 600, 400);
     }
 }
+
+
