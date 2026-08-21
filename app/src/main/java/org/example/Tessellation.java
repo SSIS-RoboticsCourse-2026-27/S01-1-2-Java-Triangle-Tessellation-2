@@ -20,7 +20,7 @@ public class Tessellation {
         // ==================================================================
 
         // code for RED triangles
-        SimpleGraphics.setFillColor(colors[0]); // set fill color to red
+        // SimpleGraphics.setFillColor(colors[0]); // set fill color to red
         for (int i = 0; i < 5; i++) { // fillTriangle(x1, y1, x2, y2, x3, y3)
             SimpleGraphics.fillTriangle(
                 2 * TRIANGLE_WIDTH, i * TRIANGLE_HEIGHT,
@@ -32,6 +32,14 @@ public class Tessellation {
         // code for BLUE triangles
 
         // code for YELLOW triangles
+        SimpleGraphics.setFillColor(colors[5]);
+        for (int i = 0; i < 5; i++){
+            SimpleGraphics.fillTriangle(
+                TRIANGLE_WIDTH, i * TRIANGLE_HEIGHT,
+                2 * TRIANGLE_WIDTH, i * TRIANGLE_HEIGHT,
+                2 * TRIANGLE_WIDTH, (i + 1) * TRIANGLE_HEIGHT
+            );
+        }
 
         // code for GREEN triangles
 
